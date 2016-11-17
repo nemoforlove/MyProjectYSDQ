@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#33000000"
+    android:padding="3dp"
+    android:visibility="gone"
+    android:gravity="center"
+    android:orientation="horizontal">
+<ProgressBar
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:layout_marginLeft="3dp"
+        android:text="视频缓冲中，请稍后..."/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/pgLoad"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/slRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <!--<ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/tvRefresh"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:padding="8dp"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:text="下拉刷新"/>
+      </ScrollView>-->
+        <ListView
+            android:id="@+id/rvIndexInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#FFEDEAEA"
+            android:dividerHeight="8dp"
+            >
+
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/toTop"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_marginRight="8dp"/>
+</RelativeLayout>
+

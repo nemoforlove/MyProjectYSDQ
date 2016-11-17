@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gpf.myprojectysdq.view.activity.SearchActivity">
+    <LinearLayout
+        android:id="@+id/searchGoTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/searchGoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            />
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/searchGoEdit"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_concer"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:layout_gravity="center_vertical"
+                />
+            <ImageView
+                android:id="@+id/searchGoClear"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                android:src="@mipmap/ys_ic_search_del"
+                android:background="@drawable/search_concer1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/searchGoSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/abc_ic_search_api_mtrl_alpha"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/searchGoBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/searchGoWeb1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

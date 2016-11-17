@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="广东深圳用户"
+            android:textColor="#3097fd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/topic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="2016-11-01 18:20:19"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:text="我是留言"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:ellipsize="end"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        app:cardElevation="12dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#3a3097fd"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/msgxXaiaobian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小编"
+                android:textColor="#3097fd"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/replay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-11-01 18:24:18"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/replay_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/msgxXaiaobian"
+                android:text="我是小编说的话"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

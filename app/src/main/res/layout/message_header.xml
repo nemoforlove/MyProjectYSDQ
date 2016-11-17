@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/megEdit"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="您的宝贵建议，是我们不断进步的动力!"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:background="@drawable/edit_border"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:id="@+id/msgTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="还可以输入200字"/>
+        <Button
+            android:id="@+id/msgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交留言"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_concer"
+            />
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#aaa"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:text="看看大家说什么"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" 
+        android:background="#aaa"/>
+
+</LinearLayout>
